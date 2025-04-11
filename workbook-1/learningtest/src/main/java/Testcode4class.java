@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Testcode4class {
     public static int result = 5; {
         //now all blocks of code can access the result variable
@@ -93,6 +95,51 @@ public class Testcode4class {
         answer = answer - 5; // answer -= 5;
         answer = answer * 10; // answer *= 10;
         answer = answer / 2; // answer /= 2;
+
+        System.out.println("this prints on a new line since there is an ln at the end of print");
+        System.out.print("this prints on the same line since the is no ln at the end of print");
+
+        float subtotal = 22.87f;
+        float tax = subtotal * 0.0825f;
+        float totaldue = subtotal + tax;
+        System.out.println(totaldue);
+        System.out.println("Total due is: " + String.format("%.2f", totaldue));
+
+        System.out.printf("Total due is: %.2f",totaldue);
+        System.out.println();
+
+        int id = 10135;
+        String name = "Brandon Plyers";
+        float pay = 5239.779f;
+
+        System.out.printf("%s (id: %d) $%.2f", name, id, pay);
+        System.out.println();
+
+        Scanner castscanner = new Scanner(System.in);
+        System.out.println("Please enter Your name: ");
+        String name1 = castscanner.nextLine();
+
+
+        System.out.println("Hello everyone I am " + name + " and I love potatoes!");
+        System.out.println("Please  Enter a number: ");
+        int firstNumber = castscanner.nextInt();
+        System.out.println("The number is: " + firstNumber);
+        System.out.println();
+
+        Scanner dosscanner = new Scanner(System.in);
+        System.out.println("Enter the first Number: ");
+        int numone = dosscanner.nextInt();
+
+        System.out.println("Enter the second number: ");
+        int numtwo = dosscanner.nextInt();
+        dosscanner.nextLine();
+
+        System.out.println("Which operation would you like to do next?");
+        String response = dosscanner.nextLine();
+
+        System.out.println("The first number is: " + numone + " and the second number is: " + numtwo);
+
+        System.out.println("The operation is: " + response);
 
 
 
