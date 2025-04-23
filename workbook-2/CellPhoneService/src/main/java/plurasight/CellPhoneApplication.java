@@ -39,7 +39,8 @@ public class CellPhoneApplication {
         System.out.println("Owner: " + firstPhone.getOwner());
 
         System.out.println(firstPhone);
-
+    }
+    public static void display(CellPhone phone){
 
     }
 }
