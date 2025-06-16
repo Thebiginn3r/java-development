@@ -1,0 +1,26 @@
+INSERT INTO `northwind`.`suppliers`
+(`SupplierID`,
+`CompanyName`,
+`ContactName`,
+`ContactTitle`,
+`Address`,
+`City`,
+`Region`,
+`PostalCode`,
+`Country`,
+`Phone`,
+`Fax`,
+`HomePage`)
+VALUES
+(30,
+"Ford",
+"Tony Brown",
+"Salesman",
+"123 downtheroad",
+"Philly",
+"PA",
+"12345",
+"USA",
+1234567890,
+0987654321,
+"JACKO");

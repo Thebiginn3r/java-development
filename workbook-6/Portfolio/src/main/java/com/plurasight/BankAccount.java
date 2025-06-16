@@ -12,15 +12,17 @@ public class BankAccount implements IValuable{
     }
 
     public void withdraw(double amount){
-
+        balance -= amount;
+        System.out.println("Your withdraw amount was approved");
     }
 
     public void deposit(double amount){
+        balance += amount;
         System.out.println("Your deposit was successful");
     }
 
     @Override
     public double getValue() {
-        return 0;
+        return balance;
     }
 }
